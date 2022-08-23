@@ -16,7 +16,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."  
   Test-Actions:
-    runs-on: golang
+    runs-on: ubuntu-20.04
     steps:
       - run: echo "The job is running a golang code"
       - name: List files in directory
