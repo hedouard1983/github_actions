@@ -20,5 +20,4 @@ jobs:
     steps:
       - run: echo "The job is running a golang code"
       - name: List files in directory
-        run: |
-        ls  ${{ github.workspace }}
+        run: pwd
