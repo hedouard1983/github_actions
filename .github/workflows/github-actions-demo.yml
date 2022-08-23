@@ -15,3 +15,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."  
+  Test-Actions:
+    runs-on: golang
+    steps:
+      - run: echo "The job is running a golang code"
+      - name: List files in directory
+        run: |
+        ls  ${{ github.workspace }}
